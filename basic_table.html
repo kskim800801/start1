@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>img tag</title>
+<meta charset="utf-8">
+</head>
+<body>
+<table border="2">
+  <thead> <!-- 자동으로 table에서 위로 올라간다.-->
+    <tr> <!-- table row -->
+      <th>이름</th> <!-- table의 제목을 표현할때 사용  -->
+      <th>성별</th>
+      <th>주소</th>
+      <th>회비</th>
+    </tr>
+ </thead>
+ <tbody>
+    <tr>
+      <td>솔비</td>
+      <td>여</td>
+      <td rowspan="2">서울</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>설현</td>
+      <td>여</td>
+      <!-- <td>서울</td> -->
+      <td>200</td>
+    </tr>
+  </tbody>
+  <tfoot> <!-- 자동으로 table에서 밑으로 내려간다.-->
+    <tr>
+      <td colspan="3">합계</td>
+      <!-- <td></td>
+      <td></td> -->
+      <td>300</td>
+    </tr>
+  </tfoot>
+</table>
+<body>
+</html>

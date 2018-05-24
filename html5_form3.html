@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>HTML5 form study</title>
+<meta charset="utf-8">
+<!-- 모마일에서 화면의 크기를 각 디바이스의 최적회된 크기로 보여준다.-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+  <!-- 자동완성기능(예전에 입력했던정보를 브라우져가 가익하고 있다가 넣어줌) : autocomplete="on" -->
+  <form action="http://localhost/form.do" method="post" autocomplete="on">
+    <ul>
+
+      <!-- autofocus 사용자 접속시 focus가 지정된다. --> 
+      <li><label><input type="text" name="id" placeholder="id를 입력해주세요." autofocus></label></li>
+
+      <!-- autocomplete="off" pw만 자동완성 하지않음.-->
+      <!-- placeholder의 값이 각각의 폼에 나타남.-->
+      <li><label><input type="password" name="password" placeholder="pw를 입력해주세요." autocomplete="off"></label></li>
+      <li><input type="submit" value="제출"></li>
+    </ul>
+  </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>form tag</title>
+<meta charset="utf-8">
+</head>
+<body>
+<form action="http://localhost/target.html">
+  <p>
+    <label for="id_txt">아이디 :</label>
+    <input id="id_txt" type="text" name="id" value="설현"/>
+  </p>
+  <p>
+    <label for="password">비밀번호 :</label>
+    <input id="password" type="password" name="password" />
+  </p>
+  <p>
+    <label> 주소 :
+    <input type="text" name="address"/>
+    </label>
+  </p>
+  <p>
+    <label>textarea :
+    <textarea id="comment" cols="50" rows="3">default value</textarea>
+    </label>
+  </P>
+  <p>
+    <label>
+      <input type="checkbox" name="color" value="red"> 붉은색
+    </label>
+    <label for="color_blue">
+      <input id="color_blue" type="checkbox" name="color" value="blue"> 파랑색
+    </label>
+  </p>
+  <p><input type="submit" value="제출"></p>
+</form>
+</body>
+</html>

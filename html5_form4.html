@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>HTML5 form study</title>
+<meta charset="utf-8">
+<!-- 모마일에서 화면의 크기를 각 디바이스의 최적회된 크기로 보여준다.-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+  <!-- form validation check -->
+
+  <form action="from.do">
+    <!-- required 필수 입력항목 지정 -->
+    <!-- pattern의 속성값은 정규값이 온다. -->
+    <!-- [a-zA-Z] 알파벳,'.' 모든 문자 핸개만, '.+' 하나이상온다, [0-9] 숫자입력-->
+    <input type="text" name="id" placeholder="아이디를 입력해주세요." required pattern="[a-zA-Z].+[0-9]">
+    <input type="password" name="password" placeholder="비밀번호를 입력해주세요.">
+    <input type="email" name="email" placeholder="이메일를 입력해주세요.">
+    <input type="submit" value="제출">
+  </form>
+
+</body>
+</html>

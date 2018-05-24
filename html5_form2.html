@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>HTML5 form study</title>
+<meta charset="utf-8">
+<!-- 모마일에서 화면의 크기를 각 디바이스의 최적회된 크기로 보여준다.-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+  <form action="http://localhost/form.do">
+    <!-- 사용자에게 숫자만 입력, min - 최소값, max 최대값 입력 -->
+    <!-- 모바일에서 입력시 숫자패드를 바로 보여준다. -->
+    <!-- 제출시 사용자로 하여금 엄격하게 입력할 수 있도록 강제한다.-->
+    <ul>
+      <li><label>숫자입력 : <input type="number" min="2" max="100" name="number"></label></li>
+      <li><label>년월일 : <input type="date" name="datev"></label></li>
+      <li><label>년월 : <input type="month" name="monthv"></label></li>
+      <li><label>주 : <input type="week" name="weekv"></label></li>
+      <li><label>시간 : <input type="time" name="timev"></label></li>
+      <li><label>이메일 : <input type="email" name="emailv"></label></li>
+
+      <!-- text와 같지만 검색하는 필드라는 의미-->
+      <li><label>Search : <input type="search" name="searchv"></label></li>
+
+      <!-- 모바일에서 전화번호를 입력하기 쉽게 숫자패드가 나온다.-->
+      <li><label>전화변호 : <input type="tel" name="telv"></label></li>
+
+      <li><label>url : <input type="url" name="urlv"></label></li>
+
+      <!-- form 전송시 min고 max 사이의 범위에서 range 위치해 있는 숫자가 전송된다.-->
+      <li><label>range : <input type="range" name="rangev" min="0" max="10"></label></li>
+    </ul>
+    <input type="submit">
+  </form>
+</body>
+</html>
